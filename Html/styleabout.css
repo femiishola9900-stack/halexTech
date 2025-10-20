@@ -1,0 +1,192 @@
+a {
+	text-decoration:none;
+	color:#FFF;
+}
+a:hovern{
+	color:#FF0;
+}
+.link {
+	display:flex;
+	gap: 15px;
+	position:absolute; top:60px; right:100px;
+	font-family:Arial, Helvetica, sans-serif;
+     }
+.link a{
+	padding: 8px 15px;
+	border-radius: 8px;
+	font-weight:500;
+}
+.link a:hover {
+	background-color:#1F1c2c;
+	color:red;
+	transform: scale(1.2);
+	transition: 0.5s;
+}
+.link a.active {
+	background-color:#D0D8C3;
+	color:#014421;
+     }
+footer {
+	    background-color:#1f1c2c;
+		color:#fff;
+		padding:20px;
+		text-align:center;
+		clear:both;
+       }
+footer ul {
+			list-style:none;
+			margin:0;
+			padding:0;
+		  }
+footer li {
+	       display:inline-block;
+		   margin-right:20px;
+           }
+footer a {
+			color:#fff;
+			text-decoration:none;
+		}
+.headings { 
+text-align:center;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:1.5em;
+text-shadow: 2px 2px 2px white;
+background-color:#C33;
+font-weight:bolder;
+padding: 5px;
+margin: 0px 450px 0px 450px;
+border-radius: 15px;
+}
+.headings:hover{
+	transform: scale(1.2);
+	transition: 2s;
+}
+.texty {
+	font-size:1.2em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+
+.textyy {
+	font-size:1.2em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.textyyy {
+	font-size:2em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:absolute; top:250px; left:250px;
+}
+.ceo {
+	border-radius: 180px;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.footer__social-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #fff
+}
+
+.footer__social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 0 auto
+}
+
+.social-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    background: #ffffff1a;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .2);
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden
+}
+
+.social-circle:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .1), transparent);
+    opacity: 0;
+    transition: opacity .3s ease
+}
+
+.social-circle:hover:before {
+    opacity: 1
+}
+
+.social-circle:hover {
+    background: #fff3;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 10px 30px #0003
+}
+
+.social-circle.twitter:hover {
+    background: linear-gradient(135deg, #1da1f2, #0d8bd9);
+    box-shadow: 0 10px 30px #1da1f266
+}
+
+.social-circle.facebook:hover {
+    background: linear-gradient(135deg, #4267b2, #365899);
+    box-shadow: 0 10px 30px #4267b266
+}
+
+.social-circle.instagram:hover {
+    background: linear-gradient(135deg, #e4405f, #fd1d1d, #fcb045);
+    box-shadow: 0 10px 30px #e4405f66
+}
+
+.social-circle.linkedin:hover {
+    background: linear-gradient(135deg, #0077b5, #005885);
+    box-shadow: 0 10px 30px #0077b566
+}
+
+.social-circle.youtube:hover {
+    background: linear-gradient(135deg, red, #c00);
+    box-shadow: 0 10px 30px #f006
+}
+
+.social-circle.email:hover {
+    background: linear-gradient(135deg, #34d399, #10b981);
+    box-shadow: 0 10px 30px #34d39966
+}
+
+.social-circle svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    z-index: 1
+}
+
+@media (max-width: 768px) {
+    .footer__social-links {
+        gap: 1rem
+    }
+
+    .social-circle {
+        width: 3rem;
+        height: 3rem
+    }
+
+    .social-circle svg {
+        width: 1rem;
+        height: 1rem
+    }
+}
